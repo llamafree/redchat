@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">REDChat</string>
+
+    <!-- Splash -->
+    <string name="splash_title">REDChat</string>
+    <string name="splash_subtitle">Mensajería Descentralizada y Privada</string>
+    <string name="init_ble">Inicializando Bluetooth LE Mesh...</string>
+    <string name="init_tor">Inicializando Red Tor...</string>
+    <string name="init_db">Cargando Base de Datos Local Room...</string>
+    <string name="init_crypto">Generando Claves de Cifrado X25519 / Ed25519...</string>
+    <string name="init_complete">Listo. Iniciando red segura...</string>
+
+    <!-- Navigation -->
+    <string name="nav_chats">Chats</string>
+    <string name="nav_channels">Canales</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="nav_info">Diagnóstico</string>
+
+    <!-- Chats Screen -->
+    <string name="search_chats">Buscar chats y pares...</string>
+    <string name="mesh_status_active">Mesh Activo</string>
+    <string name="tor_status_connected">Tor Conectado</string>
+    <string name="rssi_excellent">Excelente</string>
+    <string name="rssi_good">Buena</string>
+    <string name="rssi_fair">Regular</string>
+    <string name="rssi_weak">Débil</string>
+    <string name="typing_indicator">escribiendo...</string>
+    <string name="no_chats_title">Sin conversaciones activas</string>
+    <string name="no_chats_subtitle">La red BLE Mesh descubrirá pares automáticamente en tu área local o mediante relés Tor.</string>
+
+    <!-- Chat / Conversation -->
+    <string name="type_message_hint">Escribe un mensaje o usa /comandos...</string>
+    <string name="send">Enviar</string>
+    <string name="e2ee_verified">Cifrado X25519 + AES-256-GCM activo</string>
+    <string name="status_sending">Enviando</string>
+    <string name="status_sent">Enviado</string>
+    <string name="status_delivered">Entregado</string>
+    <string name="status_read">Leído</string>
+    <string name="reply_to">Respondiendo a %1$s</string>
+    <string name="copy_text">Copiar</string>
+    <string name="forward_text">Reenviar</string>
+    <string name="delete_text">Eliminar</string>
+    <string name="action_attachments">Adjuntos</string>
+    <string name="attach_image">Imagen</string>
+    <string name="attach_document">Documento</string>
+    <string name="attach_audio">Nota de Voz</string>
+    <string name="attach_location">Ubicación GPS</string>
+    <string name="attach_contact">Contacto</string>
+
+    <!-- Commands Overlay -->
+    <string name="cmd_join">/j #canal - Unirse a un canal</string>
+    <string name="cmd_msg">/m @usuario mensaje - Mensaje privado</string>
+    <string name="cmd_who">/w - Lista de pares en línea</string>
+    <string name="cmd_channels">/channels - Listar canales públicos</string>
+    <string name="cmd_block">/block @usuario - Bloquear usuario</string>
+    <string name="cmd_unblock">/unblock @usuario - Desbloquear usuario</string>
+    <string name="cmd_clear">/clear - Limpiar chat local en memoria</string>
+    <string name="cmd_pass">/pass clave - Establecer contraseña de canal</string>
+    <string name="cmd_transfer">/transfer @usuario - Transferir administración</string>
+    <string name="cmd_save">/save - Guardar retención en canal</string>
+
+    <!-- Channels Screen -->
+    <string name="channels_title">Canales de la Red</string>
+    <string name="create_channel">Crear Canal</string>
+    <string name="channel_name">Nombre del canal</string>
+    <string name="channel_description">Descripción</string>
+    <string name="is_protected">Proteger con contraseña (Argon2id)</string>
+    <string name="channel_password">Contraseña del canal</string>
+    <string name="members_count">%1$d miembros</string>
+    <string name="public_badge">Público</string>
+    <string name="protected_badge">Protegido</string>
+
+    <!-- Channel Info Screen -->
+    <string name="channel_info_title">Información del Canal</string>
+    <string name="channel_owner">Propietario: %1$s</string>
+    <string name="enable_history">Retención temporal de historial</string>
+    <string name="transfer_ownership">Transferir propiedad</string>
+    <string name="leave_channel">Salir del canal</string>
+    <string name="delete_channel">Eliminar canal</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Ajustes &amp; Privacidad</string>
+    <string name="profile_section">Perfil Temporal (Sin Registro)</string>
+    <string name="nickname_label">Seudónimo / Nickname</string>
+    <string name="edit_nickname">Editar Apodo</string>
+    <string name="app_appearance">Apariencia</string>
+    <string name="theme_label">Tema visual</string>
+    <string name="theme_dark">Oscuro Profundo</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_system">Sistema</string>
+    <string name="language_label">Idioma</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_en">English</string>
+
+    <string name="ble_mesh_section">Red Mesh Bluetooth LE</string>
+    <string name="ble_mesh_enable">Activar Mesh BLE Multi-Hop</string>
+    <string name="ble_mesh_desc">Inicia el descubrimiento y reenvío de paquetes por Bluetooth de baja energía.</string>
+    <string name="tor_section">Red Tor Integrada</string>
+    <string name="tor_enable">Rutear tráfico mediante Tor</string>
+    <string name="tor_node_status">Nodo Tor actual: %1$s | Latencia: %2$d ms</string>
+
+    <string name="cover_traffic_section">Cover Traffic (Tráfico Señuelo)</string>
+    <string name="cover_traffic_enable">Activar mensajes señuelo anti-análisis</string>
+    <string name="cover_traffic_desc">Genera tráfico falso con retardos aleatorios para evitar análisis de tráfico.</string>
+
+    <string name="feedback_section">Sonidos &amp; Vibración</string>
+    <string name="vibration_enable">Vibración háptica</string>
+    <string name="sounds_enable">Sonidos de la app</string>
+    <string name="notifications_enable">Notificaciones inteligentes</string>
+
+    <string name="emergency_wipe_title">Borrado de Emergencia (Emergency Wipe)</string>
+    <string name="emergency_wipe_desc">Elimina inmediatamente en memoria y disco todos los mensajes, claves, canales, base de datos Room y caché.</string>
+    <string name="triple_tap_hint">💡 Tip: También puedes realizar un triple toque en el logo de REDChat arriba para activar el borrado instantáneo.</string>
+    <string name="trigger_wipe_button">EJECUTAR BORRADO DE EMERGENCIA</string>
+    <string name="wipe_confirm_title">¿Confirmar Borrado de Emergencia?</string>
+    <string name="wipe_confirm_message">Esta acción es irreversible. Se destruirán todas las claves X25519/Ed25519, historial de la base de datos Room, pares guardados y preferencias.</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm_wipe">Destruir Todo</string>
+
+    <!-- Info / Diagnostics Screen -->
+    <string name="info_title">Diagnóstico &amp; Arquitectura</string>
+    <string name="security_specs">Protocolos de Seguridad Integrados</string>
+    <string name="spec_crypto">Cifrado: X25519, AES-256-GCM, Ed25519, Argon2id</string>
+    <string name="spec_mesh">Red: Bluetooth LE Mesh multi-hop + Tor Onion Routing</string>
+    <string name="spec_privacy">Memoria: Mensajes almacenados exclusivamente en RAM volatile</string>
+    <string name="logs_console">Consola de Logs en Tiempo Real</string>
+    <string name="clear_logs">Limpiar Logs</string>
+    <string name="copy_logs">Copiar Logs</string>
+
+    <!-- Dialogs -->
+    <string name="enter_password_title">Contraseña requerida</string>
+    <string name="enter_password_hint">Ingresa la contraseña del canal</string>
+    <string name="ok">Aceptar</string>
+    <string name="blocked_users">Usuarios Bloqueados</string>
+    <string name="unblock">Desbloquear</string>
+</resources>

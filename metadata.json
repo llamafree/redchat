@@ -1,0 +1,6 @@
+{
+  "name": "REDChat",
+  "description": "Mensajería privada, descentralizada y en tiempo real con BLE Mesh, Tor e Internet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">REDChat</string>
+
+    <!-- Splash -->
+    <string name="splash_title">REDChat</string>
+    <string name="splash_subtitle">Decentralized Private Messaging</string>
+    <string name="init_ble">Initializing Bluetooth LE Mesh...</string>
+    <string name="init_tor">Initializing Tor Network...</string>
+    <string name="init_db">Loading Room Local Database...</string>
+    <string name="init_crypto">Generating X25519 / Ed25519 Encryption Keys...</string>
+    <string name="init_complete">Ready. Launching secure network...</string>
+
+    <!-- Navigation -->
+    <string name="nav_chats">Chats</string>
+    <string name="nav_channels">Channels</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_info">Diagnostics</string>
+
+    <!-- Chats Screen -->
+    <string name="search_chats">Search chats &amp; peers...</string>
+    <string name="mesh_status_active">Mesh Active</string>
+    <string name="tor_status_connected">Tor Connected</string>
+    <string name="rssi_excellent">Excellent</string>
+    <string name="rssi_good">Good</string>
+    <string name="rssi_fair">Fair</string>
+    <string name="rssi_weak">Weak</string>
+    <string name="typing_indicator">typing...</string>
+    <string name="no_chats_title">No active conversations</string>
+    <string name="no_chats_subtitle">The BLE Mesh network will discover nearby peers automatically or via Tor relays.</string>
+
+    <!-- Chat / Conversation -->
+    <string name="type_message_hint">Type a message or use /commands...</string>
+    <string name="send">Send</string>
+    <string name="e2ee_verified">X25519 + AES-256-GCM E2E encryption active</string>
+    <string name="status_sending">Sending</string>
+    <string name="status_sent">Sent</string>
+    <string name="status_delivered">Delivered</string>
+    <string name="status_read">Read</string>
+    <string name="reply_to">Replying to %1$s</string>
+    <string name="copy_text">Copy</string>
+    <string name="forward_text">Forward</string>
+    <string name="delete_text">Delete</string>
+    <string name="action_attachments">Attachments</string>
+    <string name="attach_image">Image</string>
+    <string name="attach_document">Document</string>
+    <string name="attach_audio">Voice Note</string>
+    <string name="attach_location">GPS Location</string>
+    <string name="attach_contact">Contact</string>
+
+    <!-- Commands Overlay -->
+    <string name="cmd_join">/j #channel - Join channel</string>
+    <string name="cmd_msg">/m @user message - Private message</string>
+    <string name="cmd_who">/w - Online peer list</string>
+    <string name="cmd_channels">/channels - List public channels</string>
+    <string name="cmd_block">/block @user - Block user</string>
+    <string name="cmd_unblock">/unblock @user - Unblock user</string>
+    <string name="cmd_clear">/clear - Clear in-memory chat</string>
+    <string name="cmd_pass">/pass password - Set channel password</string>
+    <string name="cmd_transfer">/transfer @user - Transfer ownership</string>
+    <string name="cmd_save">/save - Save retention settings</string>
+
+    <!-- Channels Screen -->
+    <string name="channels_title">Network Channels</string>
+    <string name="create_channel">Create Channel</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="channel_description">Description</string>
+    <string name="is_protected">Protect with Password (Argon2id)</string>
+    <string name="channel_password">Channel Password</string>
+    <string name="members_count">%1$d members</string>
+    <string name="public_badge">Public</string>
+    <string name="protected_badge">Protected</string>
+
+    <!-- Channel Info Screen -->
+    <string name="channel_info_title">Channel Information</string>
+    <string name="channel_owner">Owner: %1$s</string>
+    <string name="enable_history">Temporary history retention</string>
+    <string name="transfer_ownership">Transfer Ownership</string>
+    <string name="leave_channel">Leave Channel</string>
+    <string name="delete_channel">Delete Channel</string>
+
+    <!-- Settings Screen -->
+    <string name="settings_title">Settings &amp; Privacy</string>
+    <string name="profile_section">Temporary Profile (No Registration)</string>
+    <string name="nickname_label">Nickname</string>
+    <string name="edit_nickname">Edit Nickname</string>
+    <string name="app_appearance">Appearance</string>
+    <string name="theme_label">Visual Theme</string>
+    <string name="theme_dark">Deep Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_system">System</string>
+    <string name="language_label">Language</string>
+    <string name="lang_es">Spanish</string>
+    <string name="lang_en">English</string>
+
+    <string name="ble_mesh_section">Bluetooth LE Mesh Network</string>
+    <string name="ble_mesh_enable">Enable Multi-Hop BLE Mesh</string>
+    <string name="ble_mesh_desc">Starts Low Energy Bluetooth peer discovery and packet forwarding.</string>
+    <string name="tor_section">Integrated Tor Network</string>
+    <string name="tor_enable">Route traffic over Tor</string>
+    <string name="tor_node_status">Current Tor Node: %1$s | Latency: %2$d ms</string>
+
+    <string name="cover_traffic_section">Cover Traffic (Decoy Messages)</string>
+    <string name="cover_traffic_enable">Enable decoy messages anti-analysis</string>
+    <string name="cover_traffic_desc">Generates background decoy traffic with random delays to prevent traffic analysis.</string>
+
+    <string name="feedback_section">Sounds &amp; Haptics</string>
+    <string name="vibration_enable">Haptic Feedback</string>
+    <string name="sounds_enable">App Sounds</string>
+    <string name="notifications_enable">Smart Notifications</string>
+
+    <string name="emergency_wipe_title">Emergency Wipe</string>
+    <string name="emergency_wipe_desc">Instantly erases all in-memory and disk messages, keys, channels, Room database, and cache.</string>
+    <string name="triple_tap_hint">💡 Tip: You can also triple-tap the REDChat logo above to trigger instant wipe.</string>
+    <string name="trigger_wipe_button">EXECUTE EMERGENCY WIPE</string>
+    <string name="wipe_confirm_title">Confirm Emergency Wipe?</string>
+    <string name="wipe_confirm_message">This action is irreversible. All X25519/Ed25519 keys, Room database history, saved peers, and preferences will be destroyed.</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm_wipe">Destroy All</string>
+
+    <!-- Info / Diagnostics Screen -->
+    <string name="info_title">Diagnostics &amp; Architecture</string>
+    <string name="security_specs">Security Specifications</string>
+    <string name="spec_crypto">Encryption: X25519, AES-256-GCM, Ed25519, Argon2id</string>
+    <string name="spec_mesh">Network: Bluetooth LE Mesh multi-hop + Tor Onion Routing</string>
+    <string name="spec_privacy">Memory: Private messages stored exclusively in volatile RAM</string>
+    <string name="logs_console">Real-Time Log Console</string>
+    <string name="clear_logs">Clear Logs</string>
+    <string name="copy_logs">Copy Logs</string>
+
+    <!-- Dialogs -->
+    <string name="enter_password_title">Password Required</string>
+    <string name="enter_password_hint">Enter channel password</string>
+    <string name="ok">OK</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="unblock">Unblock</string>
+</resources>
